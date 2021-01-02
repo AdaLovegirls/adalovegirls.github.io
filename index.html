@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-
- <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas> 
- 
-<script>
-	var c = document.getElementById("myCanvas");
-	var ctx = c.getContext("2d");
-	
-	ctx.moveTo(0,0);
-	ctx.lineTo(200,100);
-	ctx.stroke();
-</script>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+	<canvas id="canvas" width="512" height="256"></canvas>
+    <script src="script.js"></script>
+	<br>
+	<button onclick="start()">Start</button>
+	<button onclick="pause()">Pause</button>
+	<button onclick="init()">Reset</button>
+	<button onclick="singleStep()">Step</button>
+	<br><br>
+	<input type="checkbox" id="debug" checked="false"> Debug logging
+  </body>
 </html>
