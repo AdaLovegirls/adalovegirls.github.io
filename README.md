@@ -1,3 +1,1 @@
-# AdaLovegirls.github.io
-
-http://adalovegirls.github.io
+http://hazesystem.github.io
